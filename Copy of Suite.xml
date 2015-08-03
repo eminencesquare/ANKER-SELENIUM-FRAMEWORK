@@ -1,0 +1,124 @@
+<!-- This xml file define classes and testcases to be executed. -->
+<suite name="Ranker"   verbose="9">
+
+	<test name="UE TestCases" >
+		<!-- Included classes here will be executed.-->
+		<classes>
+			<class  name="com.testsuite.UeListTest.UeListTest" ></class>
+		</classes>
+	</test>
+	
+	<test name="ReRank TestCases" >
+		<!-- Included classes here will be executed.-->
+		<classes>
+			<class  name="com.testsuite.RerankTest.RerankTest" ></class>
+		</classes>
+	</test>
+	<test name="SlideShow TestCases" >
+		<!-- Included classes here will be executed.-->
+		<classes>
+			<class  name="com.testsuite.slideshow.SlideShowTests" ></class>
+		</classes>
+	</test>
+	<test name="Grid TestCases" >
+		<!-- Included classes here will be executed.-->
+		<classes>
+			<class  name="com.testsuite.GridTests.GridTests" ></class>
+		</classes>
+	</test>
+	<test name="NodePage TestCases" >
+		<!-- Included classes here will be executed.-->
+		<classes>
+			<class  name="com.testsuite.NodepageTests.NodepageTests" ></class>
+		</classes>
+	</test>
+	<test name="NavBar TestCases" >
+		<!-- Included classes here will be executed.-->
+		<classes>
+			<class  name="com.testsuite.navbar.NavBarTest" ></class>
+		</classes>
+	</test>
+	<test name="Rightrail TestCases" >
+  		<!-- Included classes here will be executed.-->
+		<classes>
+			<class  name="com.testsuite.RightrailTests.RightrailTests" ></class>
+		</classes>
+	</test>
+	<test name="PicsPage TestCases" >
+		<!-- Included classes here will be executed.-->
+		<classes>
+			<class  name="com.testsuite.PicsPage.PicsPageTest" ></class>
+		</classes>
+	</test>
+	
+	<test name="LeaderBoard TestCases" >
+		<!-- Included classes here will be executed.-->
+		<classes>
+			<class  name="com.testsuite.LeaderBoardTests.LeaderBoardTests" ></class>
+		</classes>
+	</test>
+	<test name="Listheader TestCases" >
+		<!-- Included classes here will be executed.-->
+		<classes>
+			<class  name="com.testsuite.Listheader.ListheaderTest" ></class>
+		</classes>
+	</test>
+	
+	<test name="ListHeaderTest1 TestCases" >
+		<!-- Included classes here will be executed.-->
+		<classes>
+			<class  name="com.testsuite.Listheader.ListHeaderTest1" ></class>
+		</classes>
+	</test>
+	<test name="ListOption TestCases" >
+		<!-- Included classes here will be executed.-->
+		<classes>
+			<class  name="com.testsuite.ListOptionTests.ListOptionTest" ></class>
+		</classes>
+	</test>
+	<test name="Footer TestCases" >
+		<!-- Included classes here will be executed.-->
+		<classes>
+			<class  name="com.testsuite.FooterTests.FooterTests" ></class>
+		</classes>
+	</test>
+	<test name="HomePage TestCases" >
+		<!-- Included classes here will be executed.-->
+		<classes>
+			<class  name="com.testsuite.HomePage.HomePageTest" ></class>
+		</classes>
+	</test>
+	<test name="WidgetTests TestCases" >
+		<!-- Included classes here will be executed.-->
+		<classes>
+			<class  name="com.testsuite.WidgetTests.WidgetTests" ></class>
+		</classes>
+	</test>
+	<test name="BlogPage TestCases" >
+		<!-- Included classes here will be executed.-->
+		<classes>
+			<class  name="com.testsuite.BlogTest.BlogTests" ></class>
+		</classes>
+	</test>
+	<test name="UserProfile TestCases" >
+		<!-- Included classes here will be executed.-->
+		<classes>
+			<class  name="com.testsuite.UserProfileTest.UserProfileTest" ></class>
+		</classes>
+	</test>
+	<test name="RankBlockTest TestCases" >
+		<!-- Included classes here will be executed.-->
+		<classes>
+			<class name="com.testsuite.RankBlockTests.RankBlockTest"/>
+		</classes>
+	</test>
+	<test name="ProfileImage TestCases" >
+		<!-- Included classes here will be executed.-->
+		<classes>
+			<class  name="com.testsuite.navbar.ProfileImage" ></class>
+		</classes>
+	</test>
+</suite>
+
+
+

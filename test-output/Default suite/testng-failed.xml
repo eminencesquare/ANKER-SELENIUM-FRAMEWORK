@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.testsuite.slideshow.SlideShowTests">
+        <methods>
+          <include name="AddLogFileToReport"/>
+          <include name="quit"/>
+          <include name="beforeSuite"/>
+          <include name="initializeBaseSetup"/>
+          <include name="CloseBrowser"/>
+          <include name="classSetUp"/>
+          <include name="reLaunch"/>
+          <include name="CarouselClickNextSlide" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.testsuite.slideshow.SlideShowTests -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

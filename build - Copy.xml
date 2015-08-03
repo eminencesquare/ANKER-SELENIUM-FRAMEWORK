@@ -1,0 +1,83 @@
+<!-- Buid file is used to 1) initialize suite. 2) compile suite 3) Run suite 4) Generate output.-->
+<project name="CurruntTime" default="run" basedir=".">
+	<property name="src.dir" value="src" />
+	<property name="classes.dir" value="bin" ></property>
+	<property name="lib" value="lib"></property>
+	<property name="testng.output.dir" value="Output/testng_output"/>
+	<property name="emailFileLocation" value="Output"/>
+	<!-- This is to define classpath -->
+	<path id="classpath">
+ 		<fileset dir="${lib}">
+ 	 		<include name="*.*" />
+ 		</fileset>
+ 	</path>
+	
+	<!-- This is default target to initialize the suite.-->
+	<target name="run" depends="CalculateCurruntTime">
+		<antcall target="InitialiseSuite"></antcall>
+		<antcall target="CompileSuite"></antcall>
+	    <antcall target="RunSuit"></antcall>
+	    <antcall target="EmailResult"></antcall>
+	</target>
+	
+	<!-- This target is used to generate current time to create new folder for result files.-->
+	<target name="CalculateCurruntTime">
+	 	<tstamp> 
+		    <format property="current.time" pattern="MM-dd-yyyy hh-mm-ss"/> 
+	 	</tstamp> 
+	 	<property name="CurruntTime" value="${current.time}"/>
+		
+	</target>
+	
+	<!-- This target is used to generate classes files.-->
+	<target name="InitialiseSuite">
+		<delete dir="${classes.dir}" ></delete>
+		<mkdir dir="${classes.dir}"/>
+	</target>
+	
+	<!-- This target compile the project.-->
+	<target name="CompileSuite"> 
+		<javac debug="true" srcdir="${src.dir}" destdir="${classes.dir}" classpathref="classpath" >
+		</javac>
+	</target>	
+	
+	<taskdef name="testng" classname="org.testng.TestNGAntTask"  classpathref="classpath" />
+	
+	<!-- This target to run the suite and create testng reports.-->
+    <target name="RunSuit">
+    	<echo message="RUN THE SUITE ######################################"/>
+	    <mkdir dir="Output/${CurruntTime}/${CurruntTime}"/><!-- Create the output directory. -->
+    	<testng outputdir="Output/${CurruntTime}/${CurruntTime}" classpathref="classpath" useDefaultListeners="false"
+            listeners="org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+             <sysproperty key="org.uncommons.reportng.title" value="Ranker Report"/>
+	    	<classpath location="${classes.dir}" />
+    		<xmlfileset dir="." includes="Suite.xml"/>
+			<sysproperty key="OutputFolder" value="${CurruntTime}"/>
+    	</testng>
+	</target>
+	
+	<!-- This target email generated report after completion of suite.-->
+	<target name="EmailResult">
+		<echo message="Emailing the report.*******************************************************************"/>
+		 <zip destfile="Output/${CurruntTime}/Report.zip" basedir="Output/${CurruntTime}/${CurruntTime}"/>
+		
+		<mail tolist="chantelle@ranker.com, premesh@ranker.com, qa@ranker.com, surag@ranker.com" from="kallol@ranker.com" mailhost="smtp.gmail.com" mailport="465" subject="Automation Result" user="kallol@ranker.com" password="9872305929" encoding="mime" ssl="true" >
+			<message>Automation suite run complete.</message>
+			<attachments>
+			 <fileset dir="Output/${CurruntTime}">
+			 <include name="**/*.zip"/>
+			 </fileset>
+			 </attachments>
+			
+		</mail>
+	</target>
+				
+</project>
+	 
+	
+
+	 
+ 
+ 
+ 
+ 

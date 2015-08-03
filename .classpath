@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/activation.jar"/>
+	<classpathentry kind="lib" path="lib/ant-contrib-0.6.jar"/>
+	<classpathentry kind="lib" path="lib/commons-configuration-1.9.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="lib/dom4j-full.jar"/>
+	<classpathentry kind="lib" path="lib/guice-3.0.jar"/>
+	<classpathentry kind="lib" path="lib/mail.jar"/>
+	<classpathentry kind="lib" path="lib/poi-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="lib/poi-ooxml-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="lib/poi-ooxml-schemas-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="lib/reportng-1.1.4.jar"/>
+	<classpathentry kind="lib" path="lib/saxon-8.7.jar"/>
+	<classpathentry kind="lib" path="lib/velocity-dep-1.4.jar"/>
+	<classpathentry kind="lib" path="lib/jdom-2.0.5.jar"/>
+	<classpathentry kind="lib" path="lib/json-simple.jar"/>
+	<classpathentry kind="lib" path="lib/monte-screenrecorder.jar"/>
+	<classpathentry kind="lib" path="lib/automaton.jar"/>
+	<classpathentry kind="lib" path="lib/xeger-1.0-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="lib/xmlbeans-2.3.0.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-java-client-driver-tests.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-java-client-driver.jar"/>
+	<classpathentry kind="lib" path="lib/testng-6.8.7-sources.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rupesh-Pooja/git/ranker-selenium-tests/RANKER SELENIUM FRAMEWORK/lib/reportng-1.1.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rupesh-Pooja/git/ranker-selenium-tests/RANKER SELENIUM FRAMEWORK/lib/MonteMediaCC/lib/jai_core.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rupesh-Pooja/git/ranker-selenium-tests/RANKER SELENIUM FRAMEWORK/lib/MonteMediaCC/lib/jmf.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rupesh-Pooja/git/ranker-selenium-tests/RANKER SELENIUM FRAMEWORK/lib/MonteMediaCC/dist/monte-cc.jar"/>
+	<classpathentry kind="lib" path="C:/JunoWS/StockHouse/lib/selenium-java-2.46.0.jar"/>
+	<classpathentry kind="lib" path="C:/JunoWS/StockHouse/lib/selenium-java-2.46.0-srcs.jar"/>
+	<classpathentry kind="lib" path="C:/JunoWS/StockHouse/lib/selenium-server-standalone-2.46.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
+

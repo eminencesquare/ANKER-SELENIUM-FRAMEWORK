@@ -1,0 +1,18 @@
+<!-- This xml file define classes and testcases to be executed. -->
+<suite name="RankerTest"   verbose="9">
+	<test name="CompleteSuite" >
+		<!-- Different groups are created, we can use these groups as per need. These 
+
+groups are define in testcases -->
+  		<!-- Included classes here will be executed.-->
+		<classes>
+			<class  name="com.testsuite.NodepageTests.NodepageTests" ></class>
+			<class  name="com.testsuite.GridTests.GridTests" ></class>
+			<class  name="com.testsuite.slideshow.SlideShowTests" ></class>
+			<class  name="com.testsuite.NavBarTest.java" ></class> 
+		</classes>
+	</test>
+</suite>
+
+
+

@@ -1,0 +1,9 @@
+<!-- This xml file define classes and testcases to be executed. -->
+<suite name="Ranker"   verbose="9">
+	<test name="Listheader TestCases" >
+		<!-- Included classes here will be executed.-->
+		<classes>
+			<class  name="com.testsuite.Listheader.ListheaderTest" ></class>
+		</classes>
+	</test>
+</suite>

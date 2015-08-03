@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
+
+<suite thread-count="1" verbose="1" name="Gmail Suite" annotations="JDK" parallel="classes">
+
+<listeners>
+<listener class-name="com.listener.TestListener" /> 
+</listeners>
+
+<!-- To run entire tests in linear mode -->
+   <test name="RunTests">
+       <classes>
+        	<class name="com.testsuite.navbar.SignIn"/>
+        	<class name="com.testsuite.navbar.SignUp"/>
+			<class name="com.testsuite.navbar.NavBarTest"/> 
+       </classes> 
+    </test>    
+</suite>
